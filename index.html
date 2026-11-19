@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendula Creator Program</title>
+<meta name="description" content="Calendula Creator Program: your own discount code, $6 for every yearly purchase, first sale paid right away.">
+<meta property="og:title" content="Calendula Creator Program">
+<meta property="og:description" content="Calendula Creator Program: your own discount code, $6 for every yearly purchase, first sale paid right away.">
+<meta property="og:image" content="https://ppprodukcija.github.io/calendula-creators/og.jpg">
+<meta property="og:url" content="https://ppprodukcija.github.io/calendula-creators/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EEE2;--card:#FFFBF4;--ink:#2A251F;--soft:#6E6458;--or:#E07B24;--rust:#B8532E;--green:#5F7F55;--line:rgba(42,37,31,.10);
+--display:"Fraunces",Georgia,serif;--body:"Figtree",-apple-system,"Segoe UI",sans-serif;--hand:"Caveat",cursive;color-scheme:light}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font:16px/1.6 var(--body);background:radial-gradient(900px 520px at 90% -8%,rgba(224,123,36,.16),transparent 70%),radial-gradient(700px 500px at -10% 40%,rgba(95,127,85,.10),transparent 70%),var(--bg);background-repeat:no-repeat}
+main{max-width:860px;margin:0 auto;padding:28px 20px 64px;display:grid;gap:52px}
+h1,h2{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.08;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6.6vw,54px)}h2{font-size:clamp(25px,4vw,32px)}
+h2 em{font-style:italic;font-weight:400;color:var(--rust)}
+.hand{font:600 clamp(24px,4vw,30px) var(--hand);color:var(--rust)}
+p{margin:0;max-width:65ch}.muted{color:var(--soft)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:60px;height:60px;border-radius:14px;box-shadow:0 0 0 .5px var(--line),0 6px 16px rgba(184,83,46,.18)}
+.brand span{font-weight:700}.brand small{display:block;color:var(--soft);font-weight:500}
+.lang{font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+.hero .copy{display:grid;gap:14px}
+.stack{position:relative;height:480px}
+.stack img{position:absolute;width:56%;border-radius:22px;box-shadow:0 0 0 .5px var(--line),0 18px 40px rgba(80,50,20,.20)}
+.stack img:nth-child(1){left:0;top:0;transform:rotate(-4deg)}
+.stack img:nth-child(2){right:0;top:40px;transform:rotate(4deg)}
+section{display:grid;gap:18px}
+.feat{display:grid;gap:28px}
+.f{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center}
+.f:nth-child(even){grid-template-columns:1fr 200px}
+.f:nth-child(even) img{order:2}
+.f img{width:100%;border-radius:20px;box-shadow:0 0 0 .5px var(--line),0 10px 28px rgba(80,50,20,.12)}
+.f h3{font:600 22px/1.2 var(--display);margin:0 0 6px}
+.shots{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}
+.shots figure{margin:0;flex:0 0 190px;scroll-snap-align:start}
+.shots img{width:100%;border-radius:20px;box-shadow:0 0 0 .5px var(--line),0 8px 24px rgba(42,37,31,.10);display:block}
+.steps{counter-reset:s;display:grid;gap:14px;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start}
+.steps li::before{content:counter(s);width:38px;height:38px;border-radius:50%;background:rgba(224,123,36,.16);color:var(--rust);font:600 18px var(--display);display:grid;place-items:center}
+.earn{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 8px 24px rgba(42,37,31,.06);display:grid;gap:6px}
+.card .big{font:600 52px/1 var(--display);color:var(--or);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.card .label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
+.card.main{border:2px solid var(--or)}
+.ex{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.note{background:rgba(95,127,85,.13);border-radius:20px;padding:14px 18px}
+.points{display:grid;gap:10px;padding:0;margin:0;list-style:none}
+.points li{padding-left:20px;position:relative;max-width:68ch}
+.points li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--or)}
+.rules{display:grid;gap:8px;padding-left:20px;margin:0}
+.ideas{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.idea{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;font:italic 400 18px/1.4 var(--display)}
+.cta{display:inline-block;background:var(--or);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:999px}
+a{color:var(--rust)}a:focus-visible,.cta:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+footer{border-top:1px solid var(--line);padding-top:22px;display:grid;gap:10px}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.stack{height:430px;max-width:360px;width:100%;margin:0 auto}.stack img{width:50%}.f,.f:nth-child(even){grid-template-columns:120px 1fr}.f:nth-child(even) img{order:0}.earn,.ideas{grid-template-columns:1fr}.shots figure{flex-basis:160px}}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <div class="copy">
+    <div class="top"><div class="brand"><img src="icon.png" alt="Calendula"><div><span>Calendula: Ingredient Checker</span><small>Creator Program · iPhone</small></div></div></div>
+    <h1>Read every label like you wrote it.</h1>
+    <div class="hand">for the people you shop for</div>
+    <p class="muted">Hi, I'm Pavle, a videographer from Novi Sad, Serbia. I build apps on my own, and Calendula is one of them: take a photo of the ingredient list on food or skincare, and it explains every ingredient in plain words and checks it against each person in your family. I'm looking for a few creators to help it reach people. This page explains what it does, what you get and how you get paid.</p>
+    <p><a class="lang" href="sr/">Srpski</a></p>
+  </div>
+  <div class="stack" aria-hidden="true"><img src="img/en-01-result-yogurt.jpg" alt=""><img src="img/en-03-member-editor.jpg" alt=""></div>
+</header>
+
+<section>
+  <h2>What Calendula does</h2>
+  <div class="feat"><div class="f"><img src="img/en-01-result-yogurt.jpg" alt="One label, read for your whole family" loading="lazy"><div><h3>One label, read for your whole family</h3><p class="muted">Photograph the ingredients or scan a barcode. Calendula shows at once who it fits, who should take a look and who should avoid it, based on the notes you keep for each person.</p></div></div><div class="f"><img src="img/en-02-specimen.jpg" alt="Every ingredient, gently explained" loading="lazy"><div><h3>Every ingredient, gently explained</h3><p class="muted">Tap any word on the label: what E129 is, what an emulsifier does, where added sugar hides. Plain words, with the EU and US rules behind them.</p></div></div><div class="f"><img src="img/en-03-member-editor.jpg" alt="Notes for up to 6 people" loading="lazy"><div><h3>Notes for up to 6 people</h3><p class="muted">Allergies, pregnancy, breastfeeding, baby, toddler, intolerances and preferences. These notes stay on the phone and are never sent anywhere.</p></div></div><div class="f"><img src="img/en-04-result-lotion.jpg" alt="Skincare too" loading="lazy"><div><h3>Skincare too</h3><p class="muted">Shampoo, lotion, deodorant, perfume: the same plain-language reading, with fragrance allergens and EU warnings called out.</p></div></div><div class="f"><img src="img/en-05-compare.jpg" alt="Compare two products side by side" loading="lazy"><div><h3>Compare two products side by side</h3><p class="muted">A composition score with its method and sources always visible. No brand partnerships and no ads, so there is nothing to sell you.</p></div></div></div>
+  <p class="muted">Free: 5 readings to start. Premium: 10 readings every week. 13 languages, iPhone only.</p>
+</section>
+
+<section aria-label="Screenshots">
+  <div class="shots"><figure><img src="img/en-01-result-yogurt.jpg" alt="" loading="lazy"></figure><figure><img src="img/en-02-specimen.jpg" alt="" loading="lazy"></figure><figure><img src="img/en-03-member-editor.jpg" alt="" loading="lazy"></figure><figure><img src="img/en-04-result-lotion.jpg" alt="" loading="lazy"></figure><figure><img src="img/en-05-compare.jpg" alt="" loading="lazy"></figure></div>
+  <p class="muted">Swipe for more. <a href="https://apps.apple.com/app/id6819074484">See Calendula on the App Store</a></p>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <ol class="steps"><li><div>I send you a code for <strong>a free year of Calendula Premium</strong>. Try the app whenever it suits you, in the store and at home. You don't have to post anything.</div></li><li><div>If you like it, you get <strong>your personal code</strong> and a personal link that already includes it. The link opens the App Store with your discount applied.</div></li><li><div>You put the link in your bio or pinned comment and mention your code in videos. People who already installed the app can type the code under "Redeem a code" in Settings.</div></li><li><div>Apple counts every purchase made with your code. You earn on each one, and I send you Apple's numbers every month.</div></li></ol>
+</section>
+
+<section>
+  <h2>What your followers save, <em>and what you earn.</em></h2>
+  <div class="earn"><div class="card main"><span class="label">Yearly code</span><span class="big">$6</span><span>for you, per purchase</span><span class="muted">Your followers pay $24.99 for the first year instead of $34.99.</span></div><div class="card"><span class="label">Example</span><span class="big">$120</span><span>20 yearly purchases in one month</span><span class="muted">That is arithmetic, not a sales promise.</span></div></div>
+  <p class="muted">Your share is about 25% of what the customer pays. Prices are in US dollars; Apple shows the local price in other countries.</p>
+</section>
+
+<section>
+  <h2>How and when <em>you get paid.</em></h2>
+  <ul class="points"><li><strong>Your very first sale is paid right away</strong>, as soon as it shows up in App Store Connect.</li><li>After that, each month is paid by the end of the second month after it. Example: November sales are paid by January 31. That's when Apple has paid me for that month.</li><li>Payment goes through <strong>Payoneer</strong>, to your Payoneer account or straight to your bank account. Minimum payout is $20; smaller amounts roll over to the next month.</li><li>Every month you get a statement: a screenshot of your code's purchases from App Store Connect, your commission, any refund deduction and the amount sent.</li></ul>
+  <p class="note">Honest limit: for now you see the numbers through my monthly statement, not in your own dashboard. They are Apple's numbers, unchanged.</p>
+</section>
+
+<section>
+  <h2>The fair-play rules</h2>
+  <ol class="rules"><li>Codes work only for people who have never subscribed to Calendula, so every purchase you earn on is a real new customer.</li><li>Refunds: each month's commission is reduced by that month's refund rate, as shown in my App Store financial report. Refunds that arrive later come off the next payout.</li><li>Label your posts as sponsored: use the platform's paid-partnership setting and add #ad. The free year counts as a connection too.</li><li>No medical claims. Calendula explains what a label says; never say a product is safe for pregnancy, a baby or an allergy because of the app.</li><li>Show what's on the label, without verdicts on a specific brand ("toxic", "the worst").</li><li>Your audience should be adults. Children can appear on camera only with a parent's consent. I review your first video before it goes up.</li><li>Please don't post your codes on coupon or deal sites, and never offer anything in exchange for App Store ratings or reviews.</li><li>Either of us can stop with 14 days' notice. Anything you've already earned is still paid.</li></ol>
+</section>
+
+<section>
+  <h2>Ideas that fit Calendula</h2>
+  <div class="ideas"><div class="idea">"The front says one thing. Let's read the back."</div><div class="idea">"Two kids' yogurts look the same. What does the label say?"</div><div class="idea">"Picking a baby lotion, and I want to understand every ingredient."</div><div class="idea">"What is E129 actually? Let's check with Calendula, right here in the store."</div></div>
+  <p class="muted">Your own style always beats a script. I can also send you screen recordings of the app so a video takes you less time.</p>
+</section>
+
+<footer>
+  <p><strong>Interested?</strong> Just reply to my message and I'll send your free Premium code.</p>
+  <p class="muted">Pavle Pejić · Calendula · Novi Sad, Serbia</p>
+  <p><a class="cta" href="https://apps.apple.com/app/id6819074484">Calendula on the App Store</a></p>
+</footer>
+
+</main>
+</body>
+</html>

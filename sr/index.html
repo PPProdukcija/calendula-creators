@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendula: program za kreatore</title>
+<meta name="description" content="Calendula program za kreatore: tvoj kod za popust, 5 € za svaku godišnju kupovinu, prva prodaja isplaćena odmah.">
+<meta property="og:title" content="Calendula: program za kreatore">
+<meta property="og:description" content="Calendula program za kreatore: tvoj kod za popust, 5 € za svaku godišnju kupovinu, prva prodaja isplaćena odmah.">
+<meta property="og:image" content="https://ppprodukcija.github.io/calendula-creators/og.jpg">
+<meta property="og:url" content="https://ppprodukcija.github.io/calendula-creators/sr/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EEE2;--card:#FFFBF4;--ink:#2A251F;--soft:#6E6458;--or:#E07B24;--rust:#B8532E;--green:#5F7F55;--line:rgba(42,37,31,.10);
+--display:"Fraunces",Georgia,serif;--body:"Figtree",-apple-system,"Segoe UI",sans-serif;--hand:"Caveat",cursive;color-scheme:light}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font:16px/1.6 var(--body);background:radial-gradient(900px 520px at 90% -8%,rgba(224,123,36,.16),transparent 70%),radial-gradient(700px 500px at -10% 40%,rgba(95,127,85,.10),transparent 70%),var(--bg);background-repeat:no-repeat}
+main{max-width:860px;margin:0 auto;padding:28px 20px 64px;display:grid;gap:52px}
+h1,h2{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.08;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6.6vw,54px)}h2{font-size:clamp(25px,4vw,32px)}
+h2 em{font-style:italic;font-weight:400;color:var(--rust)}
+.hand{font:600 clamp(24px,4vw,30px) var(--hand);color:var(--rust)}
+p{margin:0;max-width:65ch}.muted{color:var(--soft)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:60px;height:60px;border-radius:14px;box-shadow:0 0 0 .5px var(--line),0 6px 16px rgba(184,83,46,.18)}
+.brand span{font-weight:700}.brand small{display:block;color:var(--soft);font-weight:500}
+.lang{font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+.hero .copy{display:grid;gap:14px}
+.stack{position:relative;height:480px}
+.stack img{position:absolute;width:56%;border-radius:22px;box-shadow:0 0 0 .5px var(--line),0 18px 40px rgba(80,50,20,.20)}
+.stack img:nth-child(1){left:0;top:0;transform:rotate(-4deg)}
+.stack img:nth-child(2){right:0;top:40px;transform:rotate(4deg)}
+section{display:grid;gap:18px}
+.feat{display:grid;gap:28px}
+.f{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center}
+.f:nth-child(even){grid-template-columns:1fr 200px}
+.f:nth-child(even) img{order:2}
+.f img{width:100%;border-radius:20px;box-shadow:0 0 0 .5px var(--line),0 10px 28px rgba(80,50,20,.12)}
+.f h3{font:600 22px/1.2 var(--display);margin:0 0 6px}
+.shots{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}
+.shots figure{margin:0;flex:0 0 190px;scroll-snap-align:start}
+.shots img{width:100%;border-radius:20px;box-shadow:0 0 0 .5px var(--line),0 8px 24px rgba(42,37,31,.10);display:block}
+.steps{counter-reset:s;display:grid;gap:14px;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start}
+.steps li::before{content:counter(s);width:38px;height:38px;border-radius:50%;background:rgba(224,123,36,.16);color:var(--rust);font:600 18px var(--display);display:grid;place-items:center}
+.earn{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 8px 24px rgba(42,37,31,.06);display:grid;gap:6px}
+.card .big{font:600 52px/1 var(--display);color:var(--or);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.card .label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
+.card.main{border:2px solid var(--or)}
+.ex{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.note{background:rgba(95,127,85,.13);border-radius:20px;padding:14px 18px}
+.points{display:grid;gap:10px;padding:0;margin:0;list-style:none}
+.points li{padding-left:20px;position:relative;max-width:68ch}
+.points li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--or)}
+.rules{display:grid;gap:8px;padding-left:20px;margin:0}
+.ideas{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.idea{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;font:italic 400 18px/1.4 var(--display)}
+.cta{display:inline-block;background:var(--or);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:999px}
+a{color:var(--rust)}a:focus-visible,.cta:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+footer{border-top:1px solid var(--line);padding-top:22px;display:grid;gap:10px}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.stack{height:430px;max-width:360px;width:100%;margin:0 auto}.stack img{width:50%}.f,.f:nth-child(even){grid-template-columns:120px 1fr}.f:nth-child(even) img{order:0}.earn,.ideas{grid-template-columns:1fr}.shots figure{flex-basis:160px}}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <div class="copy">
+    <div class="top"><div class="brand"><img src="../icon.png" alt="Calendula"><div><span>Calendula: Ingredient Checker</span><small>Program za kreatore · iPhone</small></div></div></div>
+    <h1>Napokon razumeš šta piše na etiketi.</h1>
+    <div class="hand">za porodicu za koju kupuješ</div>
+    <p class="muted">Ćao, ja sam Pavle, videograf iz Novog Sada. Aplikacije pravim sam, a Calendula je jedna od njih: slikaš sastav na poleđini hrane ili kozmetike, a aplikacija ti na srpskom objasni svaki sastojak i proveri ga za svakog člana porodice. Tražim nekoliko srpskih kreatora koji bi mi pomogli da Calendula stigne do ljudi. Ovde piše šta aplikacija radi, šta dobijaš i kako stiže novac.</p>
+    <p><a class="lang" href="../">English</a></p>
+  </div>
+  <div class="stack" aria-hidden="true"><img src="../img/sr-Latn-result-yogurt.jpg" alt=""><img src="../img/sr-Latn-member-editor.jpg" alt=""></div>
+</header>
+
+<section>
+  <h2>Šta Calendula radi</h2>
+  <div class="feat"><div class="f"><img src="../img/sr-Latn-result-yogurt.jpg" alt="Jedna etiketa, pročitana za celu porodicu" loading="lazy"><div><h3>Jedna etiketa, pročitana za celu porodicu</h3><p class="muted">Slikaš sastav ili skeniraš bar-kod. Calendula odmah pokaže kome odgovara, ko treba da pogleda, a ko da izbegava, prema beleškama koje vodiš za svakog člana porodice.</p></div></div><div class="f"><img src="../img/sr-Latn-specimen.jpg" alt="Svaki sastojak, objašnjen jednostavnim rečima" loading="lazy"><div><h3>Svaki sastojak, objašnjen jednostavnim rečima</h3><p class="muted">Dodirni bilo koju reč na etiketi: šta je E129, čemu služi emulgator, gde se krije dodat šećer. Uz pravila EU i SAD koja stoje iza toga.</p></div></div><div class="f"><img src="../img/sr-Latn-member-editor.jpg" alt="Beleške za do 6 članova" loading="lazy"><div><h3>Beleške za do 6 članova</h3><p class="muted">Alergije, trudnoća, dojenje, beba, malo dete, intolerancije i navike. Beleške ostaju na telefonu i nikuda se ne šalju.</p></div></div><div class="f"><img src="../img/sr-Latn-result-lotion.jpg" alt="I nega kože" loading="lazy"><div><h3>I nega kože</h3><p class="muted">Šampon, krema, dezodorans, parfem: isto jasno objašnjenje, uz istaknute alergene iz parfema i upozorenja EU.</p></div></div><div class="f"><img src="../img/sr-Latn-compare.jpg" alt="Uporedi dva proizvoda jedan do drugog" loading="lazy"><div><h3>Uporedi dva proizvoda jedan do drugog</h3><p class="muted">Ocena sastava, a metod i izvori su uvek na vidiku. Bez saradnje sa brendovima i bez reklama, pa ti niko ništa ne podmeće.</p></div></div></div>
+  <p class="muted">Besplatno: 5 čitanja za početak. Premium: 10 čitanja nedeljno. Na srpskom (latinica) i još 12 jezika, samo za iPhone.</p>
+</section>
+
+<section aria-label="Screenshots">
+  <div class="shots"><figure><img src="../img/sr-Latn-home.jpg" alt="" loading="lazy"></figure><figure><img src="../img/sr-Latn-result-yogurt.jpg" alt="" loading="lazy"></figure><figure><img src="../img/sr-Latn-specimen.jpg" alt="" loading="lazy"></figure><figure><img src="../img/sr-Latn-member-editor.jpg" alt="" loading="lazy"></figure><figure><img src="../img/sr-Latn-result-lotion.jpg" alt="" loading="lazy"></figure><figure><img src="../img/sr-Latn-compare.jpg" alt="" loading="lazy"></figure></div>
+  <p class="muted">Prevuci za još. <a href="https://apps.apple.com/app/id6819074484">Calendula na App Storeu</a></p>
+</section>
+
+<section>
+  <h2>Kako funkcioniše</h2>
+  <ol class="steps"><li><div>Šaljem ti kod za <strong>besplatnu godinu Calendula Premiuma</strong>. Probaj aplikaciju kad ti odgovara, u radnji i kod kuće. Ne moraš ništa da objaviš.</div></li><li><div>Ako ti se svidi, dobijaš <strong>svoj lični kod</strong> i link koji ga već sadrži. Link otvara App Store sa već uračunatim popustom.</div></li><li><div>Link stavi u bio ili story, a kod pomeni u klipu. Ko već ima aplikaciju, kod unosi u Podešavanja → „Iskoristi kod“.</div></li><li><div>Apple broji svaku kupovinu preko tvog koda. Zarađuješ na svakoj, a ja ti svakog meseca šaljem Apple-ove brojke.</div></li></ol>
+</section>
+
+<section>
+  <h2>Koliko tvoji pratioci uštede, <em>a koliko ti zaradiš.</em></h2>
+  <div class="earn"><div class="card main"><span class="label">Godišnji kod</span><span class="big">5 €</span><span>za tebe, po svakoj kupovini</span><span class="muted">Pratioci prvu godinu plaćaju 19,99 € umesto 34,99 € (oko 2.340 umesto 4.100 dinara).</span></div><div class="card"><span class="label">Primer računice</span><span class="big">100 €</span><span>20 godišnjih kupovina u jednom mesecu</span><span class="muted">Ovo je samo računica, a ne obećanje prodaje.</span></div></div>
+  <p class="muted">Tvoj deo je četvrtina cene koju kupac plati. Pošto Apple zadržava svoju proviziju i PDV, to je otprilike trećina onoga što meni ostane. Cene su u evrima, onako kako ih App Store prikazuje u Srbiji.</p>
+</section>
+
+<section>
+  <h2>Kako i kada <em>dobijaš novac.</em></h2>
+  <ul class="points"><li><strong>Prva prodaja se isplaćuje odmah</strong>, čim se pojavi u App Store Connectu.</li><li>Posle toga ide mesečno: prodaja iz jednog meseca isplaćuje se do kraja drugog meseca posle njega. Na primer, novembarska do 31. januara, kad Apple isplati mene za taj mesec.</li><li>Novac stiže na tvoj račun u Srbiji, u dinarima po srednjem kursu. Minimum je 2.000 dinara, a manji iznos prelazi u sledeći mesec.</li><li>Svakog meseca dobijaš obračun: snimak ekrana iz App Store Connecta sa kupovinama preko tvog koda, proviziju, eventualne refundacije i uplaćeni iznos.</li></ul>
+  <p class="note">Iskreno: za sada brojke vidiš kroz moj mesečni obračun, a ne na sopstvenom panelu. To su Apple-ove brojke, nepromenjene.</p>
+</section>
+
+<section>
+  <h2>Fer pravila</h2>
+  <ol class="rules"><li>Kodovi važe samo za ljude koji nikad nisu bili pretplaćeni na Calendulu, pa je svaka kupovina od koje zarađuješ stvarno nov korisnik.</li><li>Refundacije: mesečna provizija se umanjuje za procenat refundacija tog meseca, prema mom finansijskom izveštaju iz App Storea. Refundacije koje stignu kasnije odbijaju se od sledeće isplate.</li><li>Objavu obeleži kao reklamu: „Plaćeno partnerstvo“ na mreži i #reklama u tekstu. Besplatnu godinu Premiuma takođe treba navesti.</li><li>Bez medicinskih tvrdnji. Calendula objašnjava šta piše na etiketi, pa nemoj tvrditi da je neki proizvod bezbedan u trudnoći, za bebu ili kod alergije samo zato što ga aplikacija ne označava.</li><li>Pokaži šta piše na deklaraciji, bez presuda o konkretnom brendu („otrov“, „najgore“).</li><li>Publika treba da su odrasli. Deca mogu u kadar samo uz pristanak roditelja. Prvi klip pogledam pre objave.</li><li>Kodovi ne idu na sajtove sa kuponima, i nikakva nagrada za ocene u App Storeu.</li><li>Svako može da prekine saradnju uz 14 dana najave. Sve što je do tada zarađeno, isplaćuje se.</li></ol>
+</section>
+
+<section>
+  <h2>Ideje za klip</h2>
+  <div class="ideas"><div class="idea">„Na prednjoj strani piše jedno. Hajde da pročitamo poleđinu.“</div><div class="idea">„Dva jogurta za decu izgledaju isto. Šta piše u sastavu?“</div><div class="idea">„Biram kremu za bebu i hoću da razumem svaki sastojak.“</div><div class="idea">„Šta je zapravo E129? Hajde da proverimo u Calenduli, ovde u radnji.“</div></div>
+  <p class="muted">Tvoj stil je uvek bolji od gotovog scenarija. Mogu da ti pošaljem snimke ekrana aplikacije da ti klip oduzme manje vremena. Savet: na početku pokaži da je jezik aplikacije „Srpski“ u podešavanjima.</p>
+</section>
+
+<footer>
+  <p><strong>Zanima te?</strong> Samo odgovori na moju poruku i šaljem ti kod za besplatnu godinu Premiuma.</p>
+  <p class="muted">Pavle Pejić · Calendula · Novi Sad, Srbija</p>
+  <p><a class="cta" href="https://apps.apple.com/app/id6819074484">Calendula na App Storeu</a></p>
+</footer>
+
+</main>
+</body>
+</html>
